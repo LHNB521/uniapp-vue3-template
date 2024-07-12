@@ -5,15 +5,15 @@ module.exports = {
   tabWidth: 2,
   useTabs: false,
   semi: false,
-  trailingComma: "all",
-  endOfLine: "auto",
-  htmlWhitespaceSensitivity: "ignore",
+  trailingComma: 'all',
+  endOfLine: 'auto',
+  htmlWhitespaceSensitivity: 'ignore',
   overrides: [
     {
-      files: "*.json",
+      files: '*.json',
       options: {
-        trailingComma: "none",
+        trailingComma: 'none',
       },
     },
   ],
-};
+}
