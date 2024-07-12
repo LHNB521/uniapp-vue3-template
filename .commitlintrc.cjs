@@ -45,9 +45,9 @@ module.exports = {
         'wip',
         'workflow',
         'types',
-        'release',
-      ],
-    ],
+        'release'
+      ]
+    ]
   },
   prompt: {
     /** @use `pnpm commit :f` */
@@ -56,7 +56,7 @@ module.exports = {
       r: 'docs: update README',
       s: 'style: update code format',
       b: 'build: bump dependencies',
-      c: 'chore: update config',
+      c: 'chore: update config'
     },
     customScopesAlign: !scopeComplete ? 'top' : 'bottom',
     defaultScope: scopeComplete,
@@ -68,8 +68,8 @@ module.exports = {
     typesAppend: [
       { value: 'wip', name: 'wip:      work in process' },
       { value: 'workflow', name: 'workflow: workflow improvements' },
-      { value: 'types', name: 'types:    type definition file changes' },
-    ],
+      { value: 'types', name: 'types:    type definition file changes' }
+    ]
 
     // 中英文对照版
     // messages: {
@@ -102,5 +102,5 @@ module.exports = {
     // ],
     // emptyScopesAlias: 'empty:      不填写',
     // customScopesAlias: 'custom:     自定义',
-  },
+  }
 }

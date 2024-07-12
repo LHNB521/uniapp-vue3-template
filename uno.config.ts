@@ -6,7 +6,7 @@ import {
   presetAttributify,
   presetIcons,
   transformerDirectives,
-  transformerVariantGroup,
+  transformerVariantGroup
 } from 'unocss'
 
 import { presetApplet, presetRemRpx, transformerAttributify } from 'unocss-applet'
@@ -25,7 +25,7 @@ if (isMp) {
     // 非小程序用官方预设
     presetUno(),
     // 支持css class属性化
-    presetAttributify(),
+    presetAttributify()
   )
 }
 export default defineConfig({
@@ -37,9 +37,9 @@ export default defineConfig({
       warn: true,
       extraProperties: {
         display: 'inline-block',
-        'vertical-align': 'middle',
-      },
-    }),
+        'vertical-align': 'middle'
+      }
+    })
     // 将颜色函数 (rgb()和hsl()) 从空格分隔转换为逗号分隔，更好的兼容性app端，example：
     // `rgb(255 0 0)` -> `rgb(255, 0, 0)`
     // `rgba(255 0 0 / 0.5)` -> `rgba(255, 0, 0, 0.5)`
@@ -63,20 +63,20 @@ export default defineConfig({
     transformerAttributify({
       // 解决与第三方框架样式冲突问题
       prefixedOnly: true,
-      prefix: 'fg',
-    }),
+      prefix: 'fg'
+    })
   ],
   rules: [
     [
       'p-safe',
       {
         padding:
-          'env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)',
-      },
+          'env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)'
+      }
     ],
     ['pt-safe', { 'padding-top': 'env(safe-area-inset-top)' }],
-    ['pb-safe', { 'padding-bottom': 'env(safe-area-inset-bottom)' }],
-  ],
+    ['pb-safe', { 'padding-bottom': 'env(safe-area-inset-bottom)' }]
+  ]
 })
 
 /**

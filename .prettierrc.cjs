@@ -1,20 +1,21 @@
 // @see https://prettier.io/docs/en/options
 module.exports = {
-  singleQuote: true,
   printWidth: 100,
   tabWidth: 2,
   useTabs: false,
   semi: false,
-  trailingComma: 'all',
-  endOfLine: 'auto',
   singleQuote: true,
-  htmlWhitespaceSensitivity: 'ignore',
-  overrides: [
-    {
-      files: '*.json',
-      options: {
-        trailingComma: 'none',
-      },
-    },
-  ],
+  quoteProps: 'preserve',
+  jsxSingleQuote: false,
+  bracketSameLine: false,
+  trailingComma: 'none',
+  bracketSpacing: true,
+  embeddedLanguageFormatting: 'auto',
+  arrowParens: 'always',
+  requirePragma: false,
+  insertPragma: false,
+  proseWrap: 'preserve',
+  htmlWhitespaceSensitivity: 'css',
+  vueIndentScriptAndStyle: false,
+  endOfLine: 'auto'
 }

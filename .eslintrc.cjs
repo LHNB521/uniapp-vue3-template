@@ -2,7 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    node: true,
+    node: true
   },
   extends: [
     'eslint:recommended',
@@ -12,23 +12,23 @@ module.exports = {
     'standard',
     'prettier',
     'plugin:prettier/recommended',
-    './.eslintrc-auto-import.json',
+    './.eslintrc-auto-import.json'
   ],
   overrides: [
     {
       env: {
-        node: true,
+        node: true
       },
       files: ['.eslintrc.{js,cjs}'],
       parserOptions: {
-        sourceType: 'script',
-      },
-    },
+        sourceType: 'script'
+      }
+    }
   ],
   parserOptions: {
     ecmaVersion: 'latest',
     parser: '@typescript-eslint/parser',
-    sourceType: 'module',
+    sourceType: 'module'
   },
   plugins: ['@typescript-eslint', 'vue', 'prettier', 'import'],
   rules: {
@@ -37,7 +37,7 @@ module.exports = {
     'import/extensions': [
       'error',
       'ignorePackages',
-      { js: 'never', jsx: 'never', ts: 'never', tsx: 'never' },
+      { js: 'never', jsx: 'never', ts: 'never', tsx: 'never' }
     ],
     'import/prefer-default-export': ['off'],
     'no-console': ['off'],
@@ -54,20 +54,16 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 'off',
     'no-redeclare': 'off',
     '@typescript-eslint/no-redeclare': 'error',
-    'prettier/prettier': [
-      'error',
-      {
-        singleQuote: true,
-      },
-    ],
+    // prettier
+    'prettier/prettier': 'error'
   },
   settings: {
     'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx'],
+      '@typescript-eslint/parser': ['.ts', '.tsx']
     },
     'import/resolver': {
-      typescript: {},
-    },
+      typescript: {}
+    }
   },
   globals: {
     $t: true,
@@ -79,6 +75,6 @@ module.exports = {
     UniHelper: true,
     Page: true,
     App: true,
-    NodeJS: true,
-  },
+    NodeJS: true
+  }
 }
