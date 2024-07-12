@@ -1,58 +1,58 @@
 {
-	"default": {
-		"globalStyle": {
-			"navigationBarBackgroundColor": "#f8f8f8",
-			"navigationBarTextStyle": "black",
-			"backgroundColor": "#FFFFFF"
-		},
-		"easycom": {
-			"autoscan": true,
-			"custom": {
-				"^wd-(.*)": "wot-design-uni/components/wd-$1/wd-$1.vue",
-				"^(?!z-paging-refresh|z-paging-load-more)z-paging(.*)": "z-paging/components/z-paging$1/z-paging$1.vue"
-			}
-		},
-		"tabBar": {
-			"color": "#999999",
-			"selectedColor": "#018d71",
-			"backgroundColor": "#F8F8F8",
-			"borderStyle": "black",
-			"height": "50px",
-			"fontSize": "10px",
-			"iconWidth": "24px",
-			"spacing": "3px",
-			"list": [
-				{
-					"iconPath": "static/tabbar/xem.png",
-					"selectedIconPath": "static/tabbar/xxxem.png",
-					"pagePath": "pages/index/index",
-					"text": "首页"
-				},
-				{
-					"iconPath": "static/tabbar/xem.png",
-					"selectedIconPath": "static/tabbar/xxxem.png",
-					"pagePath": "pages/about/index",
-					"text": "关于"
-				}
-			]
-		}
-	},
-	"pages": [
-		{
-			"path": "pages/index/index",
-			"type": "home",
-			"style": {
-				"navigationStyle": "custom",
-				"navigationBarTitleText": "首页"
-			}
-		},
-		{
-			"path": "pages/about/index",
-			"type": "home",
-			"style": {
-				"navigationBarTitleText": "关于"
-			}
-		}
-	],
-	"subPackages": []
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "type": "home",
+      "style": {
+        "navigationStyle": "default",
+        "navigationBarTitleText": "首页"
+      }
+    },
+    {
+      "path": "pages/about/index",
+      "type": "about",
+      "layout": "default",
+      "style": {
+        "navigationBarTitleText": "关于1"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationStyle": "default",
+    "navigationBarTitleText": "unibest",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#FFFFFF"
+  },
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^wd-(.*)": "wot-design-uni/components/wd-$1/wd-$1.vue",
+      "^(?!z-paging-refresh|z-paging-load-more)z-paging(.*)": "z-paging/components/z-paging$1/z-paging$1.vue"
+    }
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#018d71",
+    "borderStyle": "black",
+    "height": "50px",
+    "fontSize": "10px",
+    "iconWidth": "24px",
+    "spacing": "3px",
+    "list": [
+      {
+        "iconPath": "static/tabbar/xem.png",
+        "selectedIconPath": "static/tabbar/xxxem.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "static/tabbar/xem.png",
+        "selectedIconPath": "static/tabbar/xxxem.png",
+        "pagePath": "pages/about/index",
+        "text": "关于"
+      }
+    ]
+  },
+  "subPackages": []
 }

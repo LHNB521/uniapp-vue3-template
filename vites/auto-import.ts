@@ -6,6 +6,6 @@ export default () => {
     dts: 'src/types/auto-import.d.ts',
     dirs: ['src/hooks'], // 自动导入 hooks
     eslintrc: { enabled: true },
-    vueTemplate: true, // default false
+    vueTemplate: false, // default false
   })
 }

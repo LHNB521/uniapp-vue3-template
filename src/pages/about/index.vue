@@ -1,7 +1,8 @@
-<route lang="json5" type="home">
+<route lang="json5" type="about">
 {
+  layout: 'default',
   style: {
-    navigationBarTitleText: '关于',
+    navigationBarTitleText: '关于1',
   },
 }
 </route>

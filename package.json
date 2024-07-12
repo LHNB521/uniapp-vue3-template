@@ -85,7 +85,7 @@
     "@typescript-eslint/parser": "^7.16.0",
     "@uni-helper/vite-plugin-uni-layouts": "^0.1.10",
     "@uni-helper/vite-plugin-uni-manifest": "^0.2.6",
-    "@uni-helper/vite-plugin-uni-pages": "^0.2.25",
+    "@uni-helper/vite-plugin-uni-pages": "^0.2.20",
     "@uni-helper/vite-plugin-uni-platform": "^0.0.4",
     "@vue/tsconfig": "^0.1.3",
     "commitlint": "^19.3.0",

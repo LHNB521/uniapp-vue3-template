@@ -1,7 +1,11 @@
 import { defineUniPages } from '@uni-helper/vite-plugin-uni-pages'
 
 export default defineUniPages({
+  // 你也可以定义 pages 字段，它具有最高的优先级。
+  pages: [],
   globalStyle: {
+    navigationStyle: 'default',
+    navigationBarTitleText: 'unibest',
     navigationBarBackgroundColor: '#f8f8f8',
     navigationBarTextStyle: 'black',
     backgroundColor: '#FFFFFF',
@@ -17,7 +21,6 @@ export default defineUniPages({
   tabBar: {
     color: '#999999',
     selectedColor: '#018d71',
-    backgroundColor: '#F8F8F8',
     borderStyle: 'black',
     height: '50px',
     fontSize: '10px',

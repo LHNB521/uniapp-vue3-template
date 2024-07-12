@@ -1,7 +1,7 @@
 <route lang="json5" type="home">
 {
   style: {
-    navigationStyle: 'custom',
+    navigationStyle: 'default',
     navigationBarTitleText: '首页',
   },
 }
