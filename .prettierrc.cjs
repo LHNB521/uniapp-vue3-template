@@ -7,6 +7,7 @@ module.exports = {
   semi: false,
   trailingComma: 'all',
   endOfLine: 'auto',
+  singleQuote: true,
   htmlWhitespaceSensitivity: 'ignore',
   overrides: [
     {

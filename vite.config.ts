@@ -1,11 +1,13 @@
-import { defineConfig } from 'vite'
-import uni from '@dcloudio/vite-plugin-uni'
-import UnoCSS from 'unocss/vite'
+import { UserConfig, ConfigEnv, loadEnv, defineConfig } from 'vite'
+
+import createPlugins from './vites'
 
 // https://vitejs.dev/config/
-export default ({ command, mode }) => {
-  return defineConfig({
+export default defineConfig(({ mode, command }: ConfigEnv): UserConfig => {
+  const env = loadEnv(mode, process.cwd())
+
+  return {
     envDir: './env',
-    plugins: [uni(), UnoCSS()],
-  })
-}
+    plugins: createPlugins(env, command === 'build'),
+  }
+})
