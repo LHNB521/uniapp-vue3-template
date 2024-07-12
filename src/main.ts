@@ -1,4 +1,5 @@
 import { createSSRApp } from 'vue'
+import 'virtual:uno.css'
 import App from './App.vue'
 export function createApp() {
   const app = createSSRApp(App)
