@@ -30,7 +30,7 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint', 'vue', 'prettier', 'import'],
+  plugins: ['@typescript-eslint', 'vue', 'prettier', 'import', 'html'],
   rules: {
     'no-unused-expressions': 'off',
     'import/no-unresolved': 'off',
