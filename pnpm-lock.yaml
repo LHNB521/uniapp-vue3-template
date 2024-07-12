@@ -89,8 +89,8 @@ devDependencies:
     specifier: ^0.2.6
     version: 0.2.6(vite@4.0.4)
   '@uni-helper/vite-plugin-uni-pages':
-    specifier: ^0.2.20
-    version: 0.2.20(@types/lodash-es@4.17.12)(lodash-es@4.17.21)(lodash@4.17.21)
+    specifier: ^0.2.14
+    version: 0.2.14(@types/lodash-es@4.17.12)(lodash-es@4.17.21)(lodash@4.17.21)
   '@uni-helper/vite-plugin-uni-platform':
     specifier: ^0.0.4
     version: 0.0.4
@@ -3460,8 +3460,8 @@ packages:
       - magicast
     dev: true
 
-  /@uni-helper/vite-plugin-uni-pages@0.2.20(@types/lodash-es@4.17.12)(lodash-es@4.17.21)(lodash@4.17.21):
-    resolution: {integrity: sha512-YQlhVbUQlLP+GSscOW2/d+aS95Wtrln816sJUetC0WnaRCsq3rKMWVXzVKuWlCerEQ/ni1ISfnglFheubbl45Q==}
+  /@uni-helper/vite-plugin-uni-pages@0.2.14(@types/lodash-es@4.17.12)(lodash-es@4.17.21)(lodash@4.17.21):
+    resolution: {integrity: sha512-L9jjhJ50sumfDSxp4oKMo++VAKmSfjt+FuTGbXGKN1rSWdYouzFwMT9spW71K8y5bg5oYeHao3nrotuHXG7nJQ==}
     dependencies:
       '@uni-helper/uni-env': 0.1.3
       '@vue/compiler-sfc': 3.4.31
