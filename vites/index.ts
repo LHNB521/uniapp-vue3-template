@@ -2,6 +2,8 @@ import uni from '@dcloudio/vite-plugin-uni'
 import createAutoImport from './auto-import'
 import UniManifest from '@uni-helper/vite-plugin-uni-manifest'
 import UniPages from '@uni-helper/vite-plugin-uni-pages'
+import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
+import UniPlatform from '@uni-helper/vite-plugin-uni-platform'
 
 export default (viteEnv: any, isBuild = false): [] => {
   const vitePlugins: any = []
@@ -15,8 +17,11 @@ export default (viteEnv: any, isBuild = false): [] => {
       dts: 'src/types/uni-pages.d.ts',
     }),
   )
+  vitePlugins.push(UniLayouts())
+  vitePlugins.push(UniPlatform())
   vitePlugins.push(UniManifest())
   vitePlugins.push(uni())
   vitePlugins.push(createAutoImport())
+
   return vitePlugins
 }
