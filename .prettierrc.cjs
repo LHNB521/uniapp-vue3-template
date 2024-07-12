@@ -8,7 +8,6 @@ module.exports = {
   quoteProps: 'preserve',
   jsxSingleQuote: false,
   bracketSameLine: false,
-  trailingComma: 'none',
   bracketSpacing: true,
   embeddedLanguageFormatting: 'auto',
   arrowParens: 'always',
@@ -17,5 +16,5 @@ module.exports = {
   proseWrap: 'preserve',
   htmlWhitespaceSensitivity: 'css',
   vueIndentScriptAndStyle: false,
-  endOfLine: 'auto'
+  endOfLine: 'auto',
 }

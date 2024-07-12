@@ -9,6 +9,6 @@ export default defineConfig(({ mode, command }: ConfigEnv): UserConfig => {
 
   return {
     envDir: './env',
-    plugins: createPlugins(env, command === 'build')
+    plugins: createPlugins(env, command === 'build'),
   }
 })

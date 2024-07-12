@@ -5,7 +5,7 @@ export default (UNI_PLATFORM: string) => {
       name: 'html-transform',
       transformIndexHtml(html: any) {
         return html.replace('%BUILD_TIME%', dayjs().format('YYYY-MM-DD HH:mm:ss'))
-      }
+      },
     }
   )
 }
