@@ -6,7 +6,7 @@
       "@/*": ["./src/*"]
     },
     "lib": ["esnext", "dom"],
-    "types": ["@dcloudio/types"]
+    "types": ["@dcloudio/types", "wot-design-uni/global.d.ts"]
   },
   "exclude": ["node_modules"],
   "include": [

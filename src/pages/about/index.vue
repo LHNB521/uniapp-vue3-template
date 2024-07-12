@@ -1,3 +1,10 @@
+<route lang="json5" type="home">
+{
+  style: {
+    navigationBarTitleText: '关于',
+  },
+}
+</route>
 <template>
   <view class="content">
     <view class="text-area">

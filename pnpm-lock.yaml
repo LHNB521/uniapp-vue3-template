@@ -50,6 +50,9 @@ dependencies:
   vue-i18n:
     specifier: ^9.1.9
     version: 9.13.1(vue@3.2.47)
+  wot-design-uni:
+    specifier: ^1.3.2
+    version: 1.3.2(vue@3.2.47)
 
 devDependencies:
   '@commitlint/cli':
@@ -9941,6 +9944,15 @@ packages:
     resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /wot-design-uni@1.3.2(vue@3.2.47):
+    resolution: {integrity: sha512-y8mFY6qIbHYqP3atlBV9lgrKt+jO2FjO9uvUlWUuo8PccEAyAm3hCnLqAm7MkOhMiMPpp3OnVtDnln/GS1BgJQ==}
+    engines: {HBuilderX: ^3.8.7}
+    peerDependencies:
+      vue: '>=3.2.47'
+    dependencies:
+      vue: 3.2.47
+    dev: false
 
   /wrap-ansi@7.0.0:
     resolution: {integrity: sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==}
