@@ -42,6 +42,7 @@ module.exports = {
     'import',
   ],
   rules: {
+    'no-unused-expressions': 'off',
     // 3. 注意要加上这一句，开启 prettier 自动修复的功能
     'prettier/prettier': 'error',
     // turn on errors for missing imports
