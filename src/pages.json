@@ -15,6 +15,13 @@
       "style": {
         "navigationBarTitleText": "关于1"
       }
+    },
+    {
+      "path": "pages/map/index",
+      "type": "map",
+      "style": {
+        "navigationBarTitleText": "地图"
+      }
     }
   ],
   "globalStyle": {
@@ -51,6 +58,12 @@
         "selectedIconPath": "static/tabbar/xxxem.png",
         "pagePath": "pages/about/index",
         "text": "关于"
+      },
+      {
+        "iconPath": "static/tabbar/xem.png",
+        "selectedIconPath": "static/tabbar/xxxem.png",
+        "pagePath": "pages/map/index",
+        "text": "地图"
       }
     ]
   },

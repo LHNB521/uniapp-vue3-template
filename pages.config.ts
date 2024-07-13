@@ -39,6 +39,12 @@ export default defineUniPages({
         pagePath: 'pages/about/index',
         text: '关于',
       },
+      {
+        iconPath: 'static/tabbar/xem.png',
+        selectedIconPath: 'static/tabbar/xxxem.png',
+        pagePath: 'pages/map/index',
+        text: '地图',
+      },
     ],
   },
 })
