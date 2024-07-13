@@ -11,15 +11,15 @@
     {
       "path": "pages/about/index",
       "type": "about",
-      "layout": "default",
       "style": {
-        "navigationBarTitleText": "关于1"
+        "navigationBarTitleText": "关于"
       }
     },
     {
       "path": "pages/map/index",
       "type": "map",
       "style": {
+        "navigationStyle": "custom",
         "navigationBarTitleText": "地图"
       }
     }
@@ -56,14 +56,14 @@
       {
         "iconPath": "static/tabbar/xem.png",
         "selectedIconPath": "static/tabbar/xxxem.png",
-        "pagePath": "pages/about/index",
-        "text": "关于"
+        "pagePath": "pages/map/index",
+        "text": "地图"
       },
       {
         "iconPath": "static/tabbar/xem.png",
         "selectedIconPath": "static/tabbar/xxxem.png",
-        "pagePath": "pages/map/index",
-        "text": "地图"
+        "pagePath": "pages/about/index",
+        "text": "关于"
       }
     ]
   },

@@ -2,7 +2,32 @@ import { defineUniPages } from '@uni-helper/vite-plugin-uni-pages'
 
 export default defineUniPages({
   // 你也可以定义 pages 字段，它具有最高的优先级。
-  pages: [],
+  pages: [
+    {
+      path: 'pages/index/index',
+      style: {
+        navigationStyle: 'default',
+        navigationBarTitleText: '首页',
+      },
+    },
+    {
+      path: 'pages/map/index',
+      type: 'map',
+      style: {
+        // #ifndef H5
+        navigationStyle: 'custom',
+        // #endif
+        navigationBarTitleText: '地图',
+      },
+    },
+    {
+      path: 'pages/about/index',
+      type: 'about',
+      style: {
+        navigationBarTitleText: '关于',
+      },
+    },
+  ],
   globalStyle: {
     navigationStyle: 'default',
     navigationBarTitleText: 'unibest',
@@ -36,14 +61,14 @@ export default defineUniPages({
       {
         iconPath: 'static/tabbar/xem.png',
         selectedIconPath: 'static/tabbar/xxxem.png',
-        pagePath: 'pages/about/index',
-        text: '关于',
+        pagePath: 'pages/map/index',
+        text: '地图',
       },
       {
         iconPath: 'static/tabbar/xem.png',
         selectedIconPath: 'static/tabbar/xxxem.png',
-        pagePath: 'pages/map/index',
-        text: '地图',
+        pagePath: 'pages/about/index',
+        text: '关于',
       },
     ],
   },
